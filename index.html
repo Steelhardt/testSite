@@ -7,8 +7,75 @@
     <title>Vite App</title>
   </head>
   <body>
+    <canvas id="bg"></canvas>
+    <main>
+      <header>
+        <h1>Noah D</h1>
+        <p>Welcome to my first 3JS site</p>
+      </header>
 
-    <canvas id ="bg"></canvas>
+      <blockquote>
+        <p>All things as they are</p>
+      </blockquote>
+
+      <section>
+        <h2>How as it made?</h2>
+        <p>
+          Website was created following
+          https://www.youtube.com/watch?v=Q7AOvWpIVHU&ab_channel=Fireship
+        </p>
+        <p>
+          Video title is "Build a Mindblowing 3D Portfolio Website // Three.js
+          Beginner's Tutorial"
+        </p>
+        <h2>Who made that image on the cube?</h2>
+        <p>It was created by RadioXHazard a friend of mine</p>
+      </section>
+
+      <section class="light">
+        <h2>What Did I learn?</h2>
+        <p>
+          I learned that creating objects in a scene with 3js is easy to do.
+          Although creating animations like the scrolling effect you see now was
+          challenging to understand.
+        </p>
+        <h2>So how do you make the scrolling animation?</h2>
+        <p>
+          In order to create the scroll animation you need to go into styles.css
+          and make
+        </p>
+        <ul>
+          <li>main{position:absolute //to make it not move//</li>
+          <li>display: grid; //this is to create sections with scrolling</li>
+
+          <li>
+            grid-template-columns: repeat(12, 1fr); /*to make 12 even columns
+            that we can access*/
+          </li>
+          <li>
+            For example in styles.css header { background: var(--dark-bg);
+            grid-column: 2 / span 5; /*START on col 2 span 5 columns*/}y
+          </li>
+        </ul>
+      </section>
+
+      <blockquote>
+        <p>YOU need to learn</p>
+      </blockquote>
+
+      <section class="left">
+        <h2>Resources to learn!</h2>
+        <h3>Fireships source code for making a template site</h3>
+        <p>https://github.com/fireship-io/threejs-scroll-animation-demo</p>
+        <h3>Three.js manual</h3>
+        <p>https://threejs.org/manual/</p>
+        <h3>Learning CSS</h3>
+        <p>https://www.w3schools.com/css/default.asp</p>
+      </section>
+      <blockquote>
+        <p>Thanks for checkin out my website!</p>
+      </blockquote>
+    </main>
 
     <script type="module" src="/main.js"></script>
   </body>
