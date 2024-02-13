@@ -64,11 +64,11 @@ function addStar() {
 Array(200).fill().forEach(addStar); //for determining how many stars we want
 
 //SET BG TEXTURE
-const spaceTexture = new THREE.TextureLoader().load("space.jpg");
+const spaceTexture = new THREE.TextureLoader().load("/space.jpg");
 scene.background = spaceTexture; //set bg for scene
 
 //LOAD TEXTURE AND PUT IN CUBE
-const crunklyTexture = new THREE.TextureLoader().load("crunkly.png");
+const crunklyTexture = new THREE.TextureLoader().load("/crunkly.png");
 const crunkly = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial({map: crunklyTexture})
@@ -79,8 +79,8 @@ crunkly.position.z = -5;
 crunkly.position.x = 2;
 
 //CREATE MOON
-const moonTexture = new THREE.TextureLoader().load("moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("normal.jpg");
+const moonTexture = new THREE.TextureLoader().load("/moon.jpg");
+const normalTexture = new THREE.TextureLoader().load("/normal.jpg");
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({
